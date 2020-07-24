@@ -1,4 +1,4 @@
-package com.example.meowtec.ui.dashboard
+package com.example.meowtec.ui.nosotros
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.meowtec.R
 
-class DashboardFragment : Fragment() {
+class NosotrosFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var nosotrosViewModel: NosotrosViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        nosotrosViewModel =
+                ViewModelProviders.of(this).get(NosotrosViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_nosotros, container, false)
+        val textView: TextView = root.findViewById(R.id.text_nosotros)
+        nosotrosViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

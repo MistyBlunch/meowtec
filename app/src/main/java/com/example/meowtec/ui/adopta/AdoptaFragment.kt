@@ -1,4 +1,4 @@
-package com.example.meowtec.ui.notifications
+package com.example.meowtec.ui.adopta
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.meowtec.R
 
-class NotificationsFragment : Fragment() {
+class AdoptaFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var adoptaViewModel: AdoptaViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        adoptaViewModel =
+                ViewModelProviders.of(this).get(AdoptaViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_adopta, container, false)
+        val textView: TextView = root.findViewById(R.id.text_adopta)
+        adoptaViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

@@ -3,6 +3,6 @@
     <string name="title_home">INICIO</string>
     <string name="title_albergue">ALBERGUES</string>
     <string name="title_adopta">ADOPTA</string>
-    <string name="title_Nosotros">NOSOTROS</string>
-    <string name="title_Ingresar">INGRESAR</string>
+    <string name="title_nosotros">NOSOTROS</string>
+    <string name="title_ingresar">INGRESAR</string>
 </resources>
