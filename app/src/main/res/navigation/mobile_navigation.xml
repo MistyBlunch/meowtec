@@ -12,14 +12,24 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_albergue"
         android:name="com.example.meowtec.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_albergue"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_adopta"
         android:name="com.example.meowtec.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_adopta"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_nosotros"
+        android:name="com.example.meowtec.ui.home.HomeFragment"
+        android:label="@string/title_Nosotros"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_ingresar"
+        android:name="com.example.meowtec.ui.home.HomeFragment"
+        android:label="@string/title_Ingresar"
+        tools:layout="@layout/fragment_home" />
 </navigation>

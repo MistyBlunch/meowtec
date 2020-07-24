@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Meowtec</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">INICIO</string>
+    <string name="title_albergue">ALBERGUES</string>
+    <string name="title_adopta">ADOPTA</string>
+    <string name="title_Nosotros">NOSOTROS</string>
+    <string name="title_Ingresar">INGRESAR</string>
 </resources>
